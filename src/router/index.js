@@ -78,6 +78,28 @@ export const constantRoutes = [
   },
 
   {
+    path: '/back',
+    component: Layout,
+    //redirect: '/example/table',
+    name: 'back',
+    meta: { title: '后台管理', icon: 'el-icon-s-help' },
+    children: [
+      {
+        path: 'account-list',
+        name: 'account-list',
+        component: () => import('@/views/back/account-list'),
+        meta: { title: '帐号列表', icon: 'table' }
+      },
+      {
+        path: 'add-account',
+        name: 'add-account',
+        component: () => import('@/views/back/add-account'),
+        meta: { title: '添加帐号', icon: 'form' }
+      },
+    ]
+  },
+
+  {
     path: '/form',
     component: Layout,
     children: [
@@ -85,7 +107,7 @@ export const constantRoutes = [
         path: 'index',
         name: 'Form',
         component: () => import('@/views/form/index'),
-        meta: { title: 'Form', icon: 'form' }
+        meta: { title: '表单', icon: 'form' }
       }
     ]
   },

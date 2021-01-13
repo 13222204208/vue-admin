@@ -96,6 +96,12 @@ export const constantRoutes = [
         component: () => import('@/views/back/add-account'),
         meta: { title: '添加帐号', icon: 'form' }
       },
+      {
+        path: 'permission',
+        name: 'permission',
+        component: () => import('@/views/back/permission'),
+        meta: { title: '权限列表', icon: 'table' }
+      },
     ]
   },
 

@@ -21,7 +21,7 @@ service.interceptors.request.use(
       // please modify it according to the actual situation
       //config.headers['X-Token'] = getToken();
       config.headers.Authorization='Bearer '+getToken();
-     console.log(getToken());
+ 
     }
     return config
   },

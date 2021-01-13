@@ -8,11 +8,10 @@ export function storeAccount(data) {
   })
 }
 
-export function indexAccount(query) {
+export function indexPermission() {
   return request({
-    url: '/account',
+    url: '/permission',
     method: 'get',
-    params: query
   })
 }
 

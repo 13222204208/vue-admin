@@ -102,6 +102,13 @@ export const constantRoutes = [
         component: () => import('@/views/back/permission'),
         meta: { title: '权限列表', icon: 'table' }
       },
+      
+      {
+        path: 'role',
+        name: 'role',
+        component: () => import('@/views/back/role'),
+        meta: { title: '角色权限', icon: 'table' }
+      },
     ]
   },
 

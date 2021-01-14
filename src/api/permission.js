@@ -1,8 +1,8 @@
 import request from '@/utils/request'
 
-export function storeAccount(data) {
+export function storePermission(data) {
   return request({
-    url: '/account',
+    url: '/permission',
     method: 'post',
     data
   })
@@ -15,16 +15,16 @@ export function indexPermission() {
   })
 }
 
-export function delAccount(id) {
+export function delPermission(id) {
   return request({
-    url: '/account/'+id,
+    url: '/permission/'+id,
     method: 'delete',
   })
 }
 
-export function updateAccount(id,data) {
+export function updatePermission(id,data) {
   return request({
-    url: '/account/'+id,
+    url: '/permission/'+id,
     method: 'patch',
     data
   })
